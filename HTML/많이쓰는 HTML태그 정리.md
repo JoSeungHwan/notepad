@@ -48,9 +48,19 @@
 <input type="“text”" placeholder="“aa”" />
 ```
 
-백그라운드 글씨
-disabled == 입력요소 비활성화 <br/>
-checkbox == 체크박스
+백그라운드 글씨<dr/>
+
+```html
+<input type="" value="" disabled />
+```
+
+입력요소 비활성화 <br/>
+
+```html
+<input type="checkbox" />
+```
+
+체크박스
 
 ## button
 
@@ -70,15 +80,13 @@ checkbox == 체크박스
 
 새로운탭에서 열기
 
-## br/
+## br
 
 ```html
 안녕하세요<br />
 메모장 입니다
 ```
 
-안녕하세요 br/
-메모장 입니다
 줄바꿈처리
 
 ## <head>태그 안에 있던 태그들 정리 🚀
