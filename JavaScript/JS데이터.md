@@ -68,10 +68,10 @@ const a = true
 const b = false
 
 if (a) {
-	console.log(“aa”)
-} else if (b) {
-	console.log(“bb)
-}
+  console.log(“aa”)
+  } else if (b) {
+  console.log(“bb)
+  }
 null
 let age = null 명시적
 
@@ -95,25 +95,25 @@ user.name = “jo”
 user.age = 29
 
 function User() {
-	this.name = “Jo”
-	this.age = 29
+  this.name = “Jo”
+  this.age = 29
 }
 
 const user = {
-	name: ‘Jo’
-	age: 29
+  name: ‘Jo’
+  age: 29
 }
 
 
 const userA = {
-	name = ‘Jo’
-	age = 29
+  name = ‘Jo’
+  age = 29
 }
 
 const userB = {
-	name = ‘aa’
-	age = 22
-	parent: userA}
+  name = ‘aa’
+  age = 22
+  parent: userA}
 
 
 const users = [userA, userB]
@@ -123,14 +123,14 @@ const users = [userA, userB]
 
 ```javascript
 function hello() {
-	const.log(‘Hello!’)
+  const.log(‘Hello!’)
 }
 
 const a = function () {
-	console.log(‘A’)
+  console.log(‘A’)
 }
 const b = function (c) {
-	console.log(c)
+  console.log(c)
 }
 b(a) a함수출력
 ```
@@ -152,7 +152,7 @@ console.log(a == b) true
 
 ```javascript
 if (true) {
-	console.log(‘참!’)
+  console.log(‘참!’)
 }
 ```
 

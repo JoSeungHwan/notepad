@@ -8,7 +8,7 @@ console.log(10 / 2) 출력 5
 console.log(7 % 5) 출력 2
 
 function isEven(num) {
-	return num % 2 === 0
+  return num % 2 === 0
 }
 console.log(isEven(3)) 출력 false 홀수
 console.log(isEven(12)) 출력 true 짝수
@@ -88,10 +88,10 @@ console.log( a <= b) true
 const a = true
 const b = false
 if (a &&b) {
-	console.log(‘모두가 참’)
+  console.log(‘모두가 참’)
 }
 if (a || b) {
- 	console.log(‘하나 이상이 참’)
+  console.log(‘하나 이상이 참’)
 }
 ```
 
@@ -120,16 +120,16 @@ null 이나 nudefined빼고는 뒤에 무시
 ```javascript
 const a = 1
 if (a < 2) {
-	console.log(‘참’) 출력
+  console.log(‘참’) 출력
 } else {
-	console.log(‘거짓’)
+  console.log(‘거짓’)
 }
 
 조건 ? 참 : 거짓
 console.log(a <2 ? ‘참’ : ‘거짓’)
 
 function getAlert(message) {
-	return message ? message “ : ‘메세지가 없음’
+  return message ? message “ : ‘메세지가 없음’
 }
 ```
 
@@ -161,7 +161,7 @@ const d = {…a, …b}
 console..log(d) x:1, y:3, z:4
 
 function fn(x, y, z) {
-	console.log(x, y, z)
+  console.log(x, y, z)
 }
 fn(q, 2, 3)
 const a [1, 2, 3]
@@ -191,10 +191,10 @@ const [a, …rest] = arr
 console.log(a, rest) 1 [2, 3]
 
 const obj = {
-	a: 1,
-	b: 2,
-	c: 3
-	x: 7
+  a: 1,
+  b: 2,
+  c: 3
+  x: 7
 }
 const a = obj.a
 const b = obj.b
@@ -216,19 +216,19 @@ const user = null
 console.log(user?.name) nudrfined
 
 const userA = {
-	name: ‘Jo’,
-	age: 85,
-	addredd: {
-		country: ‘Korea’,
-		city: ‘Seoul’
-	}
+  name: ‘Jo’,
+  age: 85,
+  addredd: {
+  country: ‘Korea’,
+  city: ‘Seoul’
+  }
 }
 const userB = {
-	name: ‘Neo’
-	age: 22
+  name: ‘Neo’
+  age: 22
 }
 function gerCity(user) {
-	return user.address?.city || ‘주소 없음’
+  return user.address?.city || ‘주소 없음’
 }
 console.log(getCity(userA))
 console.log(getCity(userB)) B에는 address가 없어서 ? 을 붙여서 없으면 nudefined 가 출력하게 만든다 주소없음 출력
@@ -249,13 +249,13 @@ if (조건1) {
 }
 
 function isPositive(number) {
-	if (number > 0) {
-		return ‘양수’
-	} else if (number < 0) {
-		return ‘음수’
-	} else {
-		return ‘0’
-	}
+  if (number > 0) {
+    return ‘양수’
+  } else if (number < 0) {
+    return ‘음수’
+  } else {
+    return ‘0’
+  }
 }
 console.log(isPositive(1)) 양수
 console.log(isPositive(10)) 양수
@@ -263,37 +263,37 @@ console.log(isPositive(-2)) 음수
 console.log(isPositive(0)) 0
 
 switch (조건) {
-	case 값1:
-		조건이 값1일 때 실행
-		break
-	case 값2:
-		조건이 값2일 때 실행
-		break
-	default:
-		조건이 값1도 값2도 아닐 때 실행
+  case 값1:
+    조건이 값1일 때 실행
+    break
+  case 값2:
+    조건이 값2일 때 실행
+    break
+  default:
+    조건이 값1도 값2도 아닐 때 실행
 }
 function price(fruit) {
-	switch (fruit) {
-		case ‘Apple’:
-			return 1000
-		case ‘Banana’:
-			return 1500
-		case “cherry’:
-			return 2000
-		default:
-			return 0
-	}
+  switch (fruit) {
+    case ‘Apple’:
+      return 1000
+    case ‘Banana’:
+      return 1500
+    case “cherry’:
+      return 2000
+    default:
+      return 0
+  }
 }
 function price(fruit) {
-	if (fruit === ‘Apple’) {
-		return 1000
-	} else if (fruit === ‘Banana’) {
-		return 1500
-	} else if (fruit === ‘Chrry’) {
-		return 2000
-	} else {
-		return 0
-	}
+  if (fruit === ‘Apple’) {
+    return 1000
+  } else if (fruit === ‘Banana’) {
+    return 1500
+  } else if (fruit === ‘Chrry’) {
+    return 2000
+  } else {
+    return 0
+  }
 }
 console.log(price(‘Apple’)) 1000
 console.log(price(‘Banana’)) 1500
@@ -305,63 +305,63 @@ console.log(price(‘Hello’)) 0
 
 ```javascript
 for (초기화; 조건; 증감) {
-	반복 실행할 코드
+  반복 실행할 코드
 }
 for (let i = 0; i < 10; i += 1) {
 }
 for (let i = 9; i > -1; i -= 1) {
 }
 for (let i = 9; i > -1; i -= 1) {
-	if (i < 4) {
-		break
-	}
+  if (i < 4) {
+    break
+  }
 }
 for (let i = 9; i > -1; i -= 1) {
-	if (ii % 2 === 0) {
-		continue
-	}
+  if (ii % 2 === 0) {
+    continue
+  }
 } 짝수 빼고 출력
 
 For of 반복문
 const fruits = [‘Apple’, ‘Banana’, ‘Chrry’]
 for (let i = 0; i < fruits.lenth; i += 1) {
-	console.log(fruits[1])
+  console.log(fruits[1])
 }
 for (const a of fruits) {
- 	console.log(a)
+  console.log(a)
 }
 
 const users = [
-	{
-		name: ‘Jo’,
-		age: 29
-	},
-	{
-		name: ‘ss’,
-		age: 20
-	},
-	{
-		name: ‘hh’,
-		age: 31
-	}
+  {
+    name: ‘Jo’,
+    age: 29
+  },
+  {
+    name: ‘ss’,
+    age: 20
+  },
+  {
+    name: ‘hh’,
+    age: 31
+  }
 ]
 for (let i = 0; i < users.length; i += 1) {
-	console.log(users[i])
+  console.log(users[i])
 }
 for (const user of users) {
-	console.log(user)
+  console.log(user)
 }
 
 For in 반복문
 const user = {
-	name: ‘jo’,
-	age: 29,
-	isValid: true,
-	email: ‘swcc321@naver.com’
+  name: ‘jo’,
+  age: 29,
+  isValid: true,
+  email: ‘swcc321@naver.com’
 }
 for (const key in user) {
-	console.log(key)
-	console.log(user[key])
+  console.log(key)
+  console.log(user[key])
 }
 ```
 
