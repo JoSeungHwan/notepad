@@ -13,19 +13,19 @@
 </div>
 ```
 
-# \* : 전체 선택자 (Universal Select) 모든 요소를 선택
+## \* : 전체 선택자 (Universal Select) 모든 요소를 선택
 
 ```html
 * { color: red; } 사과 딸기 오렌지 당근 토마토 오렌지 다 선택
 ```
 
-# ABC : 태그 선택자 (Type Selector) 태그 이름이 ABC인 요소를 선택
+## ABC : 태그 선택자 (Type Selector) 태그 이름이 ABC인 요소를 선택
 
 ```html
 li { color: red; } 사과 딸기 오렌지 선택
 ```
 
-# .ABC : 클래스 선택자(Class Selector) HTML class 속성의 값이 ABC인 요소 선택
+## .ABC : 클래스 선택자(Class Selector) HTML class 속성의 값이 ABC인 요소 선택
 
 ```html
 .orange { color: red; }
@@ -33,7 +33,7 @@ li { color: red; } 사과 딸기 오렌지 선택
 이런식으로 클래스 들어간곳만 선택
 ```
 
-# #ABC : 아이디 선택자 (ID Selector) HTML id 속성의 값이 ABC인 요소 선택
+## #ABC : 아이디 선택자 (ID Selector) HTML id 속성의 값이 ABC인 요소 선택
 
 ```html
 #orange { color: red; }
@@ -43,14 +43,14 @@ li { color: red; } 사과 딸기 오렌지 선택
 
 # 복합
 
-# ABCXYZ : 일치 선택자 (Basic Combinator) 선택자 ABC와 XYZ를 동시에 만족하는 요소 선택
+## ABCXYZ : 일치 선택자 (Basic Combinator) 선택자 ABC와 XYZ를 동시에 만족하는 요소 선택
 
 ```html
 span.orange { color: red; } <span class="“orange”">오렌지</span> span과 orange
 둘다 있는 요소 선택
 ```
 
-# ABC > XYZ : 자식 선택자 (Child Combinator) 선택자 ABC의 자식 요소 XYZ 선택
+## ABC > XYZ : 자식 선택자 (Child Combinator) 선택자 ABC의 자식 요소 XYZ 선택
 
 ```html
 ul > .orange { color: red; }
@@ -58,7 +58,7 @@ ul > .orange { color: red; }
 li이 부모고 .orange자식일때 선택
 ```
 
-# ABC XYZ : 하위(자식) 선택자 (Descendant Combinator) 선택자 ABC의 하위 요소 XYZ 선택 ‘띄어쓰기’ 사 선택자의 기호!
+## ABC XYZ : 하위(자식) 선택자 (Descendant Combinator) 선택자 ABC의 하위 요소 XYZ 선택 ‘띄어쓰기’ 사 선택자의 기호!
 
 ```html
 div ,orange { color: red; }
@@ -76,7 +76,7 @@ div ,orange { color: red; }
 <span class="“orange”">오렌지</span> div안에 class=“orange” 만 선택
 ```
 
-# ABC+XYZ : 인접 형제 선택자 (Adjacent Sibling Combinator) 선택자 ABC의 다음 형제 요소 XYZ하나를 선택
+## ABC+XYZ : 인접 형제 선택자 (Adjacent Sibling Combinator) 선택자 ABC의 다음 형제 요소 XYZ하나를 선택
 
 ```html
 .orange + li { color: red; }
@@ -92,7 +92,7 @@ div ,orange { color: red; }
 다음 선택자 한개를 선택
 ```
 
-# ABC~XYZ : 일반 형제 선택자 (General Sibling Conbinator) 선택자 ABC의 다음 형제 요소 XYZ 모두를 선택
+## ABC~XYZ : 일반 형제 선택자 (General Sibling Conbinator) 선택자 ABC의 다음 형제 요소 XYZ 모두를 선택
 
 ```html
 .orange~li { color: red; }
@@ -111,19 +111,19 @@ div ,orange { color: red; }
 
 # 가상 클래스
 
-# ABC:hover : 가상 클래스 선택자 (pseudo-Classes) HOVER 선택자 ABC 요소에 마우스 커서가 올라가 있는 동안 선택
+## ABC:hover : 가상 클래스 선택자 (pseudo-Classes) HOVER 선택자 ABC 요소에 마우스 커서가 올라가 있는 동안 선택
 
 ```html
 ABC:hover { color: red; }
 ```
 
-# ABC:active : 가상 클래스 선택자 (Pseudo-Classes) ACTIVE 선택자 ABC 요소에 마우스를 클릭하고 있는 동안 선택
+## ABC:active : 가상 클래스 선택자 (Pseudo-Classes) ACTIVE 선택자 ABC 요소에 마우스를 클릭하고 있는 동안 선택
 
 ```html
 ABC:active { color: red; }
 ```
 
-# ABC:focus : 가상 클래스 선택자 (Pseudo-Classes) FOCUS 선택자 ABC 요소가 포커스되면 선택
+## ABC:focus : 가상 클래스 선택자 (Pseudo-Classes) FOCUS 선택자 ABC 요소가 포커스되면 선택
 
 ```html
 input:focus { background-color: red; }
@@ -132,7 +132,7 @@ input:focus { background-color: red; }
 tabindex 속성을 통해 Focus가 될 수 있는 요소를 만들 수 있습니다  이름에서도 알 수 있듯, Tab 키를 사용해 Focus 할 수 있는 순서를 지정하는 속성입니다<br/>
 순서(값)로 -1 이 아닌 다른 값을 넣는 것은 논리적 흐름을 방해하기 때문에 권장하지 않습니다.
 
-# ABC:first-child : 가상 클래스 선택자 (Pseudo-Classes) FIRST CHILD 선택자 ABC가 형제 요소 중 첫째라면 선택
+## ABC:first-child : 가상 클래스 선택자 (Pseudo-Classes) FIRST CHILD 선택자 ABC가 형제 요소 중 첫째라면 선택
 
 ```html
 .fruits span:first-child { color: red; }
@@ -155,7 +155,7 @@ color: red; }
 첫번째 자식이 span 인데 조건 부적합으로 ? 출력
 ```
 
-# ABC:last-child : 가상 클래스 선택자 (Pseudo-Classes) LAST CHILD 선택자 ABC가 형제 요소 중 막내라면 선택
+## ABC:last-child : 가상 클래스 선택자 (Pseudo-Classes) LAST CHILD 선택자 ABC가 형제 요소 중 막내라면 선택
 
 ```html
 .fruits h3:lastcgild { color: red; }
@@ -169,7 +169,7 @@ color: red; }
 </div>
 ```
 
-# ABC:nth-child(n) : 가상 클래스 선택자 (Pseudo-Classes) NTH CHILD 선택자 ABC가 형제 요소 중 (n)째라면 선택
+## ABC:nth-child(n) : 가상 클래스 선택자 (Pseudo-Classes) NTH CHILD 선택자 ABC가 형제 요소 중 (n)째라면 선택
 
 ```html
 .friuts *:nth-child(2) { color: red; }
@@ -215,7 +215,7 @@ color: red; }
 n+2 = 0+2=2 1+2=3 2+2=4 … 결과론적으로 두번째 부터 선택
 ```
 
-# ABC:not(XYZ) 부정 선택자 (Negation) NOT 선택자 XYZ가 아닌 ABC 요소 선택
+## ABC:not(XYZ) 부정 선택자 (Negation) NOT 선택자 XYZ가 아닌 ABC 요소 선택
 
 ```html
 .fruits *:not(span) {  color: red; }
@@ -234,7 +234,7 @@ span제외하고 선택
 
 # 가상 요소
 
-# ABC::before : 가상 요소 선택자 (Pseudo-Elements) BEDORE 선택자 ABC 요소의 내부 앞에 내용(Content)을 삽입 (자주쓰인다)
+## ABC::before : 가상 요소 선택자 (Pseudo-Elements) BEDORE 선택자 ABC 요소의 내부 앞에 내용(Content)을 삽입 (자주쓰인다)
 
 ```html
 .box::before { contact: “앞!”; }
@@ -242,7 +242,7 @@ span제외하고 선택
 출력 : 앞! Content
 ```
 
-# ABC::after : 가상 요소 선택자 (Pseudo-Elements) AFTER 선택자 ABC 요소의 내부 뒤에 내용(Content)을 삽입
+## ABC::after : 가상 요소 선택자 (Pseudo-Elements) AFTER 선택자 ABC 요소의 내부 뒤에 내용(Content)을 삽입
 
 ```html
 .box::after box{ content: “뒤!”; }
@@ -257,7 +257,7 @@ span제외하고 선택
 
 # 속성
 
-# [ABC] : 속성 선택자 (Attribute) ATTR 속성 ABC을 포함한 요소 선택
+## [ABC] : 속성 선택자 (Attribute) ATTR 속성 ABC을 포함한 요소 선택
 
 ```html
 [disabled] { color: red; }
@@ -267,7 +267,7 @@ span제외하고 선택
 선택
 ```
 
-# [ABC=“XYZ] : 속성 선택자 (Attribute) ATTR=VALUE 속성 ABC을 포함하고 값이 XYZ인 요소 선택
+## [ABC=“XYZ] : 속성 선택자 (Attribute) ATTR=VALUE 속성 ABC을 포함하고 값이 XYZ인 요소 선택
 
 ```html
 [type=“password”] { color: red; }
