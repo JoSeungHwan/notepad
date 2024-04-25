@@ -196,7 +196,7 @@ perspective : 원근법(거리)<br/>
 
 perspective : 하위 요소를 관찰하는 원근 거리를 지정<br/>
 
-i[Jo](../img/tr1.png)
-i[Jo](../img/tr2.png)
+![Jo](../img/tr1.png)
+![Jo](../img/tr2.png)
 backface-visibility : 3D 변환으로 회전된 요소의 뒷면 숨김 여부 ( visible 뒷면 보임, hidden 뒷면 숨김 )
-i[Jo](../img/tr3.png)
+![Jo](../img/tr3.png)
