@@ -1,20 +1,36 @@
 # HTML 태그
 
-## 많이쓰는 HTML태그 정리! 📚
+많이쓰는 HTML태그 정리! 📚
 
 ## div
+
+```html
+<div></div>
+```
 
 영역을 나누는데 쓰임 (수직영역)
 
 ## span
 
+```html
+<span></span>
+```
+
 콘텐츠 영역을 설정하는 용도 (수평영역)
 
 ## p
 
+```html
+<p></p>
+```
+
 문단을 나누는데 쓰임 (div태그와 거의 비슷한 용도이나 단지 밑에 공간이 좀더 생김)
 
 ## img
+
+```html
+<img src="" />
+```
 
 이미지 넣는데 쓰임. 단일태그임
 
@@ -23,7 +39,7 @@
 검색창처럼 사용자에게 입력을 받는 태그 단일태그임 글자를입력할수있는 상자
 
 ```html
-ex> <input type="“text”" value="“aa”" />
+<input type="“text”" value="“aa”" />
 ```
 
 글자박스에 value값을 출력되게함
@@ -33,10 +49,14 @@ ex> <input type="“text”" value="“aa”" />
 ```
 
 백그라운드 글씨
-disabled == 입력요소 비활성화
+disabled == 입력요소 비활성화 <br/>
 checkbox == 체크박스
 
 ## button
+
+```html
+<button></button>
+```
 
 버튼을 만듬
 
@@ -50,8 +70,15 @@ checkbox == 체크박스
 
 새로운탭에서 열기
 
-## <br/>
+## br/
 
+```html
+안녕하세요<br />
+메모장 입니다
+```
+
+안녕하세요 br/
+메모장 입니다
 줄바꿈처리
 
 ## <head>태그 안에 있던 태그들 정리 🚀
@@ -70,5 +97,4 @@ checkbox == 체크박스
 
 ## 링크
 
-<a href="https://replit.com/~
-https://yunbinni.tistory.com/63">링크</a>
+<a href="https://yunbinni.tistory.com/63">링크</a>
