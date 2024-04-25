@@ -22,11 +22,7 @@ main.small.css
 <link
   rel="stylesheet"
   href="./css/main.medium.css"
-  media="“(max-width:1200px)”"
+  media="(max-width:1200px)"
 />
-<link
-  rel="stylesheet"
-  href="./css/main.small.css"
-  media="“(max-width:800px)”"
-/>
+<link rel="stylesheet" href="./css/main.small.css" media="(max-width:800px)" />
 ```
