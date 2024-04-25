@@ -170,3 +170,33 @@ transition-timing-function : 전환 효과의 타이밍(Easing) 함수를 지정
 4. ease-out : 빠르게 - 느리게<br/>
 5. ease-in-out : 느리게 - 빠르게 - 느리게<br/>
    transition-delay : 전환 효과가 몇 초 뒤에 시작할지 대기시간을 지정 ( 0s 대기시간 없음, 시간 대기시간(s)을 지정 )<br/>
+
+# 변환
+
+## 요소의 변환 효과
+
+1. transform: 변환함수1 변환함수2 변환함수3<br/>
+2. transform: 원근법 이동 크기 화전 기울임; <br/>
+
+## 2D 변환 함수
+
+transform(x, y) : 이동(x축, y축)<br/>
+transformX : 이동(x축)<br/>
+transformY : 이동(y축)<br/>
+scale(x ,y) : 크기(x축, y축)<br/>
+rotate(degree) : 회전(각도)<br/>
+skewX : 기울임(x축)<br/>
+skewY : 기울임(y축)<br/>
+
+## 3D 변환 함수
+
+rotateX(x) : 회전(x축)<br/>
+rotateY(y) : 회전(y축)<br/>
+perspective : 원근법(거리)<br/>
+
+perspective : 하위 요소를 관찰하는 원근 거리를 지정<br/>
+
+i[Jo](../img/tr1.png)
+i[Jo](../img/tr2.png)
+backface-visibility : 3D 변환으로 회전된 요소의 뒷면 숨김 여부 ( visible 뒷면 보임, hidden 뒷면 숨김 )
+i[Jo](../img/tr3.png)
